@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>Poster page</title>
+		<meta name="author" content="Eva Siao" />
+		<meta name="description" content="poster challenge" />
+		<meta charset="UTF-8">
+        <style>
+            body {
+                background-color: black;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:cyan;
+            }
+            .background{
+                position:absolute;
+            }
+
+            .warning{
+                position:absolute;
+            }
+
+            #codebook {
+                position: absolute;
+                right: 160px;
+                top: 582px;
+            }
+
+            .door {
+                position: absolute;
+                right:-487px;
+                top:672px;
+            }
+            .attack {
+                position:absolute;
+                right:-645px;
+                top:60px;
+            }
+            .goldendesign {
+                position:absolute;
+                right:-645px;
+                top:150px;
+            }
+
+            #titleoutput, #descriptionoutput {
+                color:rgb(48, 48, 48);
+                background-color: white;
+            }
+        
+        </style>
+    </head> 
+    <body>
+        <img src="https://i.ibb.co/0XvBRG0/posters-and-bookcase.jpg" height="780px" alt="background" class="background">
+
+        <a href="/6EndPages/Fail.html"><div style="background-color: rgb(190, 12, 12);color:white; padding:10px; position:absolute; right:1335px; top:20px; border: 1px solid white;">I give up</div></a> 
+
+        <div id="codebook">
+            <!--JS will output-->
+        </div>
+
+        <div id="secretdoor">
+            <!--JS will output-->
+        </div>
+
+        <!--Password for the instructions and link to the codebook-->
+ 
+        <div class="attack">
+            <div id="firstinput">
+            <label for="title">What is the <br> codebook's title?</label><br>
+            <input type="text" id="title" name="title" value="">
+            <button onclick="titlesubmit()">Enter</button>
+            </div>
+            <!--Where JS will output-->
+            <p id="titleoutput"></p>
+        </div>
+        <!--Password for the instructions and link to the the next challenge-->
+        <div class="goldendesign">
+            <div id="secondinput">
+            </div>
+            <!--Where JS will output-->
+            <p id="descriptionoutput"></p>
+        </div>
+        <script src="answers.js"></script>
+    
+    </body> 
+</html>

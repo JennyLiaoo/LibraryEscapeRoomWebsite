@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .background{
+            display:grid;
+            grid-template-rows: 6fr 1fr;
+        }
+        .wall{
+            background-color:  rgb(89, 128, 167);
+        }
+        .floor{
+            background-color:  rgb(185,185,185);
+            height:103px
+        }
+        .door{
+            position:absolute;
+            left:600px;
+        }
+        .memory{
+            position:absolute;
+            left:650px;
+            top:195px;
+            z-index:1;
+            }
+        .submit{
+            position:absolute;
+            left:785px;
+            top:225px;
+            z-index:1;
+            }
+        .Number{
+            position:absolute;
+            left:665px;
+            top:225px;
+            z-index:1;
+        }
+        #printout{
+            position:absolute;
+            left:645px;
+            top:140px;
+            z-index: 1;
+        }
+        .attempts{
+            position:absolute;
+            left:690px;
+            top:160px;
+            z-index: 1;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="wall">
+            <p class="door">
+                <img src="images/door.jpg" height="600" width="300">
+            </p>
+
+            <div id="printout">
+                <p>Let's see if your memory is good!</p>
+            </div>
+            <div class="attempts">
+                <p>you get three tries</p>
+            </div>
+
+                <!-- buttons, one shows the numbers, and the other checks if you are correct or not -->
+            <div class=submit>
+                <button onclick="enter()">enter</button>
+            </div>
+            <div class=Number>
+                <button onclick="showNum()"> Show numbers</button>
+            </div>
+        </div>
+        <div class="floor">
+            <p></p>
+        </div>
+    </div>
+        <!-- textbox to type in your answer -->
+    <div class=memory>
+        <label for="memory"></label>
+        <input type="text" id="memory" name="memory" size="25">
+    </div>
+    <a href="/6EndPages/Fail.html"><div style="background-color: rgb(190, 12, 12);color:white; padding:10px; position:absolute; right:1335px; top:20px; border: 1px solid white;">I give up</div></a> 
+
+
+    <script src="memory.js"></script>
+</body>
+</html>

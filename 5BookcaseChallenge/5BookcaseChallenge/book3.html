@@ -1,0 +1,101 @@
+<html>
+    <head> 
+        <title>Red book</title> 
+        <meta name="author" content="Wanjiru Myers" /> 
+        <meta name="description" content="Escape room challenge" /> 
+        <meta charset="UTF-8" />
+        <style>
+            p{
+                text-align: center;
+                font-size:xx-large;
+            }
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h2{
+                text-align: center;
+                font-size:xx-large;
+            }
+            .button{
+                display: table;
+                margin: 0 auto;
+            }
+            body{
+                background-color:rgb(243, 67, 23);
+            }
+            a:link, a:visited {
+                background-color: gray;
+                color: black;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            a:hover, a:active {
+                background-color: gray;
+            }
+            .box{
+                position:absolute;
+                bottom: 700;
+                right: 1410;
+                left: auto;
+                width: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="swirl.png" alt="swirl" height="50">
+        <h2>Rivers, and other bodies of water</h2>
+        <p>
+        Carmen Santiago
+        </p>
+        <img src="swirl.png" alt="swirl" height="50">
+        <br>
+        <div class = "button">
+        <button onclick="enterPassword()">Enter password</button>
+        </div>
+        <br>
+        <br>
+        <div class="box">
+            <a href="bookcase.html" target="">Back to bookshelf</a>
+        </div>
+        <h2 id = "noPass"></h2>
+        
+        <script>
+            // This code makes it so that, when someone enters the password, if it is correct, it takes them to another page, and if it is incorrect, it creates an alert saying "wrong password".
+            "use strict";
+            let y = 127502;
+            let x = document.getElementById("noPass");
+            function enterPassword() {
+                let z = prompt("Enter password to unlock book");
+                if (z == y) {
+                console.log("yay");
+                alert("Correct password!");
+                window.location.replace("/6EndPages/SucessNote.html");
+                }
+                else {
+                console.log("awww");
+                alert("Wrong password, try again");
+                }
+            }
+            console.log(y==127502)
+            console.log(x==document.getElementById("noPass"))
+            console.log(x==y)
+        </script>
+    </body>
+</html>

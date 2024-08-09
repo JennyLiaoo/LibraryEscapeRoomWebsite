@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta name="authors" content="Wanjiru Myers and Eva Siao">
+       <meta name="description" content="Ghost Challenge">
+       <meta charset="UTF-8">
+       <meta http-equiv="refresh" content="15;patience.html" />
+       <title>Ghost Challenge</title>
+       <style>
+           img{
+               display: block;
+               margin-left: auto;
+               margin-right: auto;
+           }
+           body{
+               background-color: black;
+               position:absolute;
+           }
+           #counteroutput {
+               position:absolute;
+               border:5px solid blue;
+               margin: 10px;
+               padding:20px 10px 0px;
+               text-align:center;
+               width:100px;
+               height:100px;
+               border-radius: 20px;
+               font-size: 50px;
+               color:white;
+           }
+       </style>
+   </head>
+   <body>
+       <div id="counteroutput">
+           0
+       </div>
+       <img src="background.png" height="900px" alt="background" class="background">
+       <script>
+       let btnElement = makeAButton();
+       document.body.appendChild(btnElement);
+       // This function is called when the button is clicked on
+       // It gets the button to delete itself, make a new button and then have the new button added.
+       let counter = 1;
+       function hit() {
+           btnElement.parentNode.removeChild(btnElement);
+           btnElement = makeAButton();
+           document.body.appendChild(btnElement);
+           document.getElementById("counteroutput").innerHTML=counter;
+           counter+=1;
+           if (counter>15) {
+               window.location.href="Memorymaze.html";
+           }
+       }
+ 
+   // This function creates a random number between 50 an the HEIGHT of the web page - 50
+   function randomY() {
+       let value = Math.floor(Math.random() * (window.innerHeight - 50)) + 50;
+       return value;
+   }
+ 
+   // This function creates a random number between 50 an the WIDTH of the web page - 50
+   function randomX() {
+       let value = Math.floor(Math.random() * (window.innerWidth - 50)) + 50;
+       return value;
+   }
+ 
+   // This is a function that makes a button and then returns the finished button to be added.
+   function makeAButton() {
+       var x = document.createElement("IMG");
+       x.setAttribute("src", "ghost.png");
+       x.setAttribute("width", "304");
+       x.setAttribute("height", "228");
+       x.setAttribute("alt", "The Pulpit Rock");
+       document.body.appendChild(x);
+ 
+       // This assigns the onclick event to CALL the hit() function
+       // Its another way to dynamically set the event calls.  NOTE: () isn't used!!! for hit()
+       x.onclick = hit;
+ 
+       // Make the button so that it has a specific (x,y) position on the web page
+       x.style.position = "absolute";        // Special CSS property that allows me to give it a set position on the web page
+       x.style.top = randomY() + "px";       // The position will be in pixels so I have to add the units px
+       x.style.left = randomX() + "px";
+ 
+       return x;
+   }
+</script>
+</body>
+</html>
+  

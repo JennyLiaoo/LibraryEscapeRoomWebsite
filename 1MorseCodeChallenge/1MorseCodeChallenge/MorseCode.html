@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Morse Code Puzzle</title> 
+        <meta name="author" content="Jenny" /> 
+        <meta name="description" content="Morse Code" /> 
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="MorseCode.css">
+
+</head>
+<body>
+    <div class=background>
+<div class=ceiling><p>
+</p></div>
+        <!-- All the images and their sizes -->
+    <div class=wall>
+        <p class= "morse"><img src="images/morse.jpg" width="130" height="200"></p>
+        <p class= "bookcase1"><img src="images/bookcase.jpg" width="250" height="280"> </p>
+        <p class= "bookcase2"><img src="images/bookcase.jpg" width="250" height="280"> </p>
+        <p class= "bookcase3"><img src="images/bookcase.jpg" width="250" height="280"> </p>
+        <p class= "bookcase4"><img src="images/bookcase.jpg" width="250" height="280"> </p>
+        <p class= "bookcase5"><img src="images/bookcase.jpg" width="300" height="280"> </p>
+        <p class= "bookcase6"><img src="images/bookcase.jpg" width="250" height="280"> </p>
+        <p class= "bookcase7"><img src="images/bookcase.jpg" width="250" height="280"> </p>
+        <p class= "bookcase8"><img src="images/bookcase.jpg" width="250" height="280"> </p>
+        <p class= "bookcase9"><img src="images/bookcase.jpg" width="250" height="280"> </p>
+        <div class="door"><img src="images/door.jpg" width="170" height="300"></div>
+        <div class="sign"><p class= "onsign">Books about codes</p></div>   
+        <div class="enterpassword"></div>
+            <!-- these are here as links to the clues, the numbers correspond to the order of the word -->
+        <div class="Code1"><a href="clue1.html">1</a></div>
+        <div class="Code2"><a href="clue2.html">2</a></div>
+        <div class="Code3"><a href="clue3.html">3</a></div>
+        <div class="Code4"><a href="clue4.html">4</a></div>
+        <div class="Code5"><a href="clue5.html">5</a></div>
+        <div class="Code6"><a href="clue6.html">6</a></div>
+
+        <div class="printout">
+            
+        </div>
+    <!-- Textbox for entering the password -->
+        <div class=pass>
+            <label for="password"></label>
+            <input type="text" id="password" name="password" size="8">
+        </div>
+            <!-- submit button to see if you are correct or not -->
+        <div class=submit>
+            <button onclick="enter()">enter</button>
+        </div>
+    </div>
+<div class=floor><p></p></div>
+    </div>
+    <a href="/6EndPages/Fail.html"><div style="background-color: rgb(190, 12, 12);color:white; padding:10px; position:absolute; right:20px; top:20px; border: 1px solid white;">I give up</div></a> 
+
+    <script src="morsescript.js"></script>
+</body>
+</html>

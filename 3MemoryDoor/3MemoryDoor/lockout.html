@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lock out page</title> 
+        <meta name="author" content="Jenny" /> 
+        <meta name="description" content="Locked" /> 
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="lockout.css">
+    </head>
+
+    <body>
+        <h1>Complete this to go back</h1>
+        <!-- this is a spot where the time will go, if the player spots it, it might help them with completing the task -->
+        <p id="timer"></p>
+        <!-- progress bar, the person counts the seconds until the progress bar fills up -->
+        <progress value="0" max="10" id="progressBar" style="height:24px;width:20%">
+            <div id="bar"></div>
+        </progress>
+
+        <p>Enter how many seconds pass until the progress bar fills up. Reload the page to reset the progress bar (there may be hints somewhere)</p>
+    <div>
+        <input type="text" id="length" name="length" size="8">
+    </div>
+
+    <!-- submits the guess of the player -->
+    <div class=submit>
+        <button onclick="enter()">enter</button>
+    </div>
+
+<!-- this is a distraction to use up more time. If the player notices the time that is at the bottom of the page, they may notice that they can scroll down. This might be able to successfully stall more time -->
+<p id="distraction" onclick="distract()">If you found this... maybe there are clues somewhere</p>
+
+
+        <script src="lockout.js"></script>
+    </body>

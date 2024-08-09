@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Memory maze</title> 
+    <meta name="author" content="Wanjiru Myers" /> 
+    <meta name="description" content="Memory Maze Main Page" /> 
+    <meta charset="UTF-8" /> 
+    <style>
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body{
+            background-color: black;
+        }
+        .door{
+            position: absolute;
+            bottom: 270px;
+            right: 800px;
+            width: 0px;
+        }
+        .paper{
+            position:absolute;
+            bottom: 355px;
+            right: 440px;
+            width: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="room">
+        <img src="Memory maze.svg" alt="Memory Maze" height="800">
+    </div>
+    <div class="door">
+        <a href="maze1.html"><img src="door1.jpeg" alt="door" height="400"></a>
+    </div>
+    <div class="paper">
+        <a href="ghostnote.html"><img src="paper.png" alt="paper" height="40"></a>
+    </div>
+    <a href="/6EndPages/Fail.html"><div style="background-color: rgb(190, 12, 12);color:white; padding:10px; position:absolute; right:20px; top:20px; border: 1px solid white;">I give up</div></a>
+</body>
+</html>

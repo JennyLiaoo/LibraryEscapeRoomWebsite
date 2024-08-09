@@ -1,0 +1,134 @@
+.background{
+    display:grid;
+    grid-template-rows: 1fr 3fr 2fr;
+    }
+.ceiling{
+    background-color:rgb(230,230,230);
+    height:105px;
+}
+.wall{
+    background-color: rgb(157,199,242);
+}
+.floor{
+    background-color: rgb(185,185,185);
+}
+p.morse{
+    position:absolute;
+    left: 455px;
+    top:100px;
+}
+.bookcase1{
+    position:absolute;
+    right:500px;
+    top:150px;
+}
+.bookcase2{
+    position:absolute;
+    right:250px;
+    top:150px;
+}
+.bookcase3{
+    position:absolute;
+    right:9px;
+    top:150px;
+}
+.bookcase4{
+    position:absolute;
+    right:340px;
+    top:220px;
+}
+.bookcase5{
+    position:absolute;
+    right:90px;
+    top:220px;
+}
+.bookcase6{
+    position:absolute;
+    right:10px;
+    top:220px;
+}
+.bookcase7{
+    position:absolute;
+    right:430px;
+    top:300px;
+}
+.bookcase8{
+    position:absolute;
+    right:10px;
+    top:300px;
+}
+.bookcase9{
+    position:absolute;
+    right:200px;
+    top:300px;
+}
+.sign{
+    height: 80px;
+    width:130px;
+    background-color:white;
+    position:absolute;
+    right:150px;
+    top:245px;
+}
+.onsign{
+    color:black;
+    text-align:center;
+    font-size: 23px;
+    font-style:oblique;
+    font-weight:bold;
+    position: absolute;
+
+}
+.door{
+    position:absolute;
+    left:90px;
+    top:128px;
+}
+.Code1{
+    position:absolute;
+    right:355px;
+    top:210px;
+}
+.Code2{
+    position:absolute;
+    right:138px;
+    top:430px;
+}
+.Code3{
+    position:absolute;
+    right:736px;
+    top:210px;
+}
+.Code4{
+    position:absolute;
+    right:86px;
+    top:530px;
+}
+.Code5{
+    position:absolute;
+    right:600px;
+    top:520px;
+}
+.Code6{
+    position:absolute;
+    right:520px;
+    top:292px;
+}
+.pass{
+    position:absolute;
+    left:134px;
+    top:195px;
+    z-index:1;
+}
+.submit{
+    position:absolute;
+    left:155px;
+    top:225px;
+    z-index:1;
+}
+.printout{
+    position:absolute;
+    left:122px;
+    top:150px;
+    z-index:1;
+}

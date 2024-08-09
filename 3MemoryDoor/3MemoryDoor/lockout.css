@@ -1,0 +1,12 @@
+#distraction{
+    position:absolute;
+    top:1500px;
+}
+body{
+    background-color: rgb(243, 107, 125);
+    text-align:center;
+}
+#timer{
+    position:absolute;
+    top:695px;
+}
